@@ -29,8 +29,6 @@ def calcWeights(weights_list):
 
 
 numbers = list(range(0, 10))
-print("원본 리스트: \n", numbers, "\n")
-print("가중치 리스트: \n", calcWeights([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]), "\n")
 
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
 print("추출 리스트(가중치 적용) - 십만단위: ", sorted(choiceNumber(numbers, calcWeights([0, 3, 0, 0, 1, 2, 0, 1, 0, 0]), 1)))
