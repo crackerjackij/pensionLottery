@@ -21,7 +21,7 @@ def calcWeights(weights_list):
     rtns = []
     for n in weights_list:
         if n != 0:
-            n = -n + 100
+            n = -n + 100 * 0.8
         else:
             n = n + 100
         rtns.append(n)
