@@ -1,4 +1,5 @@
 import random
+import penslonLotteryCrol
 
 # 연금복권 번호 뽑기
 # 조 1~5 까지 존재
@@ -31,14 +32,14 @@ def calcWeights(weights_list):
 numbers = list(range(0, 10))
 
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 십만단위: ", sorted(choiceNumber(numbers, calcWeights([0, 3, 1, 0, 1, 2, 0, 1, 0, 0]), 1)))
+print("추출 리스트(가중치 적용) - 십만단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(1)), 1)))
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 만단위: ", sorted(choiceNumber(numbers, calcWeights([0, 0, 1, 1, 1, 2, 0, 0, 0, 2]), 1)))
+print("추출 리스트(가중치 적용) - 만단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(2)), 1)))
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 천단위: ", sorted(choiceNumber(numbers, calcWeights([1, 0, 1, 1, 4, 0, 0, 1, 0, 0]), 1)))
+print("추출 리스트(가중치 적용) - 천단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(3)), 1)))
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 백단위: ", sorted(choiceNumber(numbers, calcWeights([2, 1, 1, 0, 1, 1, 1, 0, 0, 1]), 1)))
+print("추출 리스트(가중치 적용) - 백단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(4)), 1)))
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 십단위: ", sorted(choiceNumber(numbers, calcWeights([1, 0, 1, 1, 0, 4, 0, 0, 0, 1]), 1)))
+print("추출 리스트(가중치 적용) - 십단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(5)), 1)))
 # 가중치 적용(0번부터 당첨횟수를 적어준다.)
-print("추출 리스트(가중치 적용) - 일단위: ", sorted(choiceNumber(numbers, calcWeights([1, 0, 2, 1, 0, 2, 0, 0, 2, 0]), 1)))
+print("추출 리스트(가중치 적용) - 일단위: ", sorted(choiceNumber(numbers, calcWeights(penslonLotteryCrol.getWinningNumberReturnArr(6)), 1)))
