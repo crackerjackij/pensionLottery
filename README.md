@@ -1,7 +1,12 @@
 # pensionLottery
 python 3.7
 
-``` python src/penslonLottery.py ```
+``` 
+pip install requests
+pip install bs4
+
+python src/penslonLottery.py 
+```
 
 연금복권 번호 추출
  - 가중치 설정 가능(많이 뽑힌 번호는 확률이 낮게 추출. 아예 추출 안되는건 아님)
