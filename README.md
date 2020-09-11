@@ -13,5 +13,8 @@ python src/penslonLottery.py
  - ~~매번 당첨일별로 가중치를 등록해줘야한다. 동행복권 사이트에서 당첨통계를 활용해서 넣어주면 된다.~~
  - 실행 시 동행복권 사이트에서 당첨번호를 추출해서 가중치를 부여해준다.(아래 주소가 변경되면 소스에서 변경해준다.)
    - https://www.dhlottery.co.kr/gameResult.do?method=index720
+   
+2020.09.11
+ - 파이썬 실행이 어려운분들은 /dist/penslonLottery.exe 파일을 실행. 윈도우의 경우 CMD에서 실행하여야 함. (그냥 실행시 순식간에 꺼짐)
  
 우리 모두 부자 됩시다.
